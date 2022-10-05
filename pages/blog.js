@@ -1,0 +1,35 @@
+import Head from 'next/head'
+import Image from 'next/image'
+import React from 'react'
+import Footer from './components/Footer'
+import Navbar from './components/navbar'
+
+function blog() {
+    return (
+        <>
+            <Head>
+                <title>Blog | CodingWithBongProgramiz</title>
+                <meta name="description" content="Blog | CodingWithBongProgramiz" />
+            </Head>
+            <Navbar />
+            <div className="container m-auto">
+                <section className="text-gray-600 body-font overflow-hidden">
+                    <div className="container px-5 py-24 mx-auto">
+                        <div className="-my-8 divide-y-2 divide-gray-100">
+                            <div className="py-8 flex flex-wrap md:flex-nowrap">
+                                <div className="md:flex-grow">
+                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
+                                    <p className="leading-relaxed mb-4">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+                                    <a className="cursor-pointer px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 my-2">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <Footer />
+        </>
+    )
+}
+
+export default blog
