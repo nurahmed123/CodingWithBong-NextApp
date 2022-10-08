@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import React from 'react'
-import Navbar from './components/navbar'
-import Footer from "../pages/components/Footer"
 
 function contact() {
     return (
@@ -9,9 +7,7 @@ function contact() {
             <Head>
                 <title>Contact | CodingWithBongProgramiz</title>
                 <meta name="description" content="Contact | CodingWithBongProgramiz" />
-                <link rel="icon" href="/favicon.png" />
             </Head>
-            <Navbar />
             <section className="text-gray-600 body-font relative">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-12">
@@ -74,7 +70,6 @@ function contact() {
                     </div>
                 </div>
             </section>
-            <Footer />
         </>
     )
 }
