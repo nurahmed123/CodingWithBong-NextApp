@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 function blog() {
     const [blogs, setBlogs] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:3000/api/blogs').then((a) => {
+        fetch(`http://localhost:3000/api/blogs`).then((a) => {
             return a.json();
         })
             .then((parsed) => {
