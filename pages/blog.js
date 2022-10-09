@@ -2,9 +2,15 @@ import Head from 'next/head'
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
+function useBlog() {
+  const [blogs, setBlogs] = useState([]);
+
+  return [blogs, setBlogs];
+}
+
 
 function blog() {
-    const [blogs, setBlogs] = useState([]);
+    const [blogs, setBlogs] = useBlog();
     useEffect(() => {
         fetch(`http://localhost:3000/api/blogs`).then((a) => {
             return a.json();
